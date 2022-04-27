@@ -1,0 +1,301 @@
+
+/*Header*/
+header{
+    background-color: lightgray;
+    padding: 20px 0;
+    height: 70px;
+}
+.container h1 img{
+    width: 50px;
+    
+}
+.container{
+    position: relative;
+    width: 940px;
+    height: 40px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+nav a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+ }
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a:hover{
+    background-image: linear-gradient(to bottom, red, white, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+#banner {
+	width:100%;
+}
+
+/*Main*/
+
+.principal{
+    padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left ;
+}
+
+.titulo-principal:before{
+    content: "[";
+}
+.titulo-principal:after{
+    content: "]";
+}
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+    
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    
+}
+
+.video{
+    width: 500px;
+    margin: 2em auto;
+}
+
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0px 20px 20px 0;
+
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+    
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:before{
+    content: "★";
+}
+.itens:first-child{
+    font-weight: bold;
+
+}
+
+/*Produtos*/
+.produtos{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 50px 0 ;
+}
+.produtos li{
+    display: inline-block;
+    border: 2px black solid;
+    margin: 0 1.5%;
+    border-radius: 10px;
+    text-align:  center;
+    font-size: 18px; 
+    width: 30%;
+    vertical-align: top;
+    padding: 35px 25px;
+    box-sizing: border-box;
+  
+}
+.produtos h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.preco-produto{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px 0 0;
+
+}
+
+.produtos li img:hover{
+    width: 255px;
+    transition: 0s;
+}
+.produtos li:hover{
+    border: 2px solid;
+    border-image: linear-gradient( red, white, blue) 5;
+    transition: 2s;
+    
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+    transition: 1s;
+}
+
+ /*Contatos*/
+
+ .formulario{
+    margin: 50px ;
+    width: 940px;
+ }
+form{
+    margin: 40px 0px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0px;
+}
+
+
+thead{
+    background: gray;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    color: white;
+    background: black;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    background:rgb(37, 37, 37);
+    border: 1px solid rgb(46, 46, 46);
+    transition: 1s all;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+ 
+
+/*Footer*/
+
+footer{
+    position: relative;
+    background: url(./img/bg.jpg);
+    text-align: center;
+    padding: 55px 0;
+    bottom: 0;
+
+}
+.copyright{
+    color: white;
+}
+
+#banner {
+	width:100%;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 480px) {
+    .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+    .principal, .conteudo-beneficios,.mapa-conteudo, .video{
+        margin: 20px 20px;
+    }
+
+  nav ul{
+     bottom: 10px
+  }
+
+
+}
